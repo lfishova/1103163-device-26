@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Елена Фишова](https://up.htmlacademy.ru/htmlcss/26/user/1103163).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Маркелов] (https://htmlacademy.ru/profile/nikolamarkelov).
 
 ---
 
