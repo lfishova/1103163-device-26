@@ -6,44 +6,47 @@
   </head>
   <body>
     <header>
-      <nav>
+      <div class="">
         <a><img src="img/device-logo.svg" width="" height="" alt="Логотип магазина Девайс"></a>
+      </div>
+      <nav>
         <div>
-          <label for="search_on_site">Поиск по сайту</label>
-          <input type="text" name="search_on_site" id="search_on_site">
+          <div>
+            <label for="search_on_site">Поиск по сайту</label>
+            <input type="text" name="search_on_site" id="search_on_site">
+          </div>
+          <ul>
+            <li>
+              <a href="#">Валентин Петухов</a>
+            </li>
+            <li>
+              <button type="button" name="button">Выйти</button>
+            </li>
+            <li>
+              <a href="#">Сравнить</a>
+            </li>
+            <li>
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
+        <div class="">
+          <div class="">
             <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#">Валентин Петухов</a>
-          </li>
-          <li>
-            <button type="button" name="button">Выйти</button>
-          </li>
-
-        </ul>
-        <ul>
-          <li>
-            <a href="#">Сравнить</a>
-          </li>
-          <li>
-            <a href="#">Корзина</a>
-          </li>
-        </ul>
-
+          </div>
+          <ul>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -61,36 +64,58 @@
         <h2>Фильтрация поиска</h2>
         <!-- Здесь будет форма -->
       </section>
+      <!-- Не поняла что такое overlay, добавила div для него -->
       <section>
         <h2>Список моноподов</h2>
         <ul>
           <li>
-            <h3>
-              <a href=""><span>Любительская селфи палка</span></a>
-            </h3>
-            <a href=""><img src="img/noob-pod.png" width="" height="" alt="Любительская селфи-палка"></a>
-            <p>500 руб.</p>
+            <article>
+              <h3>
+                <a href=""><span>Любительская селфи палка</span></a>
+              </h3>
+              <a href=""><img src="img/noob-pod.png" width="" height="" alt="Любительская селфи-палка"></a>
+              <p>500 руб.</p>
+            </article>
+            <div class="">
+              <!-- overlay -->
+            </div>
           </li>
           <li>
-            <h3>
-              <a href=""><span>Профессиональная селфи-палка</span></a>
-            </h3>
-            <a href=""><img src="img/profie-pod.png" width="" height="" alt="Профессиональная селфи-палка"></a>
-            <p>1500 руб.</p>
+            <article>
+              <h3>
+                <a href=""><span>Профессиональная селфи-палка</span></a>
+              </h3>
+              <a href=""><img src="img/profie-pod.png" width="" height="" alt="Профессиональная селфи-палка"></a>
+              <p>1500 руб.</p>
+
+            </article>
+            <div class="">
+              <!-- overlay -->
+            </div>
           </li>
           <li>
-            <h3>
-              <a href="#"><span>Непотопляемая селфи-палка</span></a>
-            </h3>
-            <a href=""><img src="img/waterproof-pod.png" width="" height="" alt="Непотопляемая селфи-палка"></a>
-            <p>2500 руб.</p>
+            <article>
+              <h3>
+                <a href="#"><span>Непотопляемая селфи-палка</span></a>
+              </h3>
+              <a href=""><img src="img/waterproof-pod.png" width="" height="" alt="Непотопляемая селфи-палка"></a>
+              <p>2500 руб.</p>
+            </article>
+            <div class="">
+              <!-- overlay -->
+            </div>
           </li>
           <li>
-            <h3>
-              <a href=""><span>Селфи-палка «Следуй за мной»</span></a>
-            </h3>
-            <a href=""><img src="img/followme-pod.png" width="" height="" alt="Селфи-палка «следуй за мной»"></a>
-            <p>4900 руб.</p>
+            <article>
+              <h3>
+                <a href=""><span>Селфи-палка «Следуй за мной»</span></a>
+              </h3>
+              <a href=""><img src="img/followme-pod.png" width="" height="" alt="Селфи-палка «следуй за мной»"></a>
+              <p>4900 руб.</p>
+            </article>
+            <div class="">
+              <!-- overlay -->
+            </div>
           </li>
         </ul>
       </section>
@@ -98,54 +123,62 @@
     </main>
 
     <footer>
+      <div class="">
+        <p>
+          <img src="img/device-logo-2.svg" width="" height="" alt="Логотип магазина Девайс-2">
+        </p>
+        
+        <ul>
+          <li>
+            <a href="#">Валентин Петухов</a>
+          </li>
+          <li>
+            <button type="button" name="button">Выйти</button>
+          </li>
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <div class="">
+        <p>
+          г. Москва, ул. Строителей, 15
+        </p>
 
-      <img src="img/device-logo-2.svg" width="" height="" alt="Логотип магазина Девайс-2">
-      <p>
-        г. Москва, ул. Строителей, 15
-      </p>
-      <p>
-        Тел.: +7(495)495-95-95
-      </p>
-      <ul>
-        <li>
-          <a href="#">Валентин Петухов</a>
-        </li>
-        <li>
-          <button type="button" name="button">Выйти</button>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">Сравнить</a>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">Доставка</a>
-        </li>
-        <li>
-          <a href="#">Гарантия</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a href="#">Инстаграм</a>
-        </li>
-        <li>
-          <a href="#">Твиттер</a>
-        </li>
-      </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <ul>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
 
+        <p>
+          Тел.: +7(495)495-95-95
+        </p>
+      </div>
+      <div class="">
+        <span><!--Желтая горизонтальная линия--></span>
+        <ul>
+          <li>
+            <a href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#">Инстаграм</a>
+          </li>
+          <li>
+            <a href="#">Твиттер</a>
+          </li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </div>
     </footer>
 
   </body>
