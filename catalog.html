@@ -9,31 +9,78 @@
       <div class="">
         <a><img src="img/device-logo.svg" width="" height="" alt="Логотип магазина Девайс"></a>
       </div>
+
       <nav>
         <div>
           <div>
             <label for="search_on_site">Поиск по сайту</label>
             <input type="text" name="search_on_site" id="search_on_site">
+            <span><!-- иконка поиска--></span>
           </div>
           <ul>
             <li>
               <a href="#">Валентин Петухов</a>
+              <span><!-- иконка пользователя--></span>
             </li>
             <li>
               <button type="button" name="button">Выйти</button>
             </li>
             <li>
               <a href="#">Сравнить</a>
+              <span><!-- иконка сравнить--></span>
             </li>
             <li>
               <a href="#">Корзина</a>
+              <span><!-- иконка корзины--></span>
             </li>
           </ul>
         </div>
+
         <div class="">
+
           <div class="">
             <a href="catalog.html">Каталог товаров</a>
+            <span><!-- icon plus --></span>
           </div>
+          <div class="">
+            <!-- Меню вываливающееся при наведении на него-->
+            <ul>
+              <li>
+                <ul>
+                  <li>
+                    <a href="#">Виртуальная реальность</a>
+                  </li>
+                  <li>
+                    <a href="#">Моноподы для селфи</a>
+                  </li>
+                  <li>
+                    <a href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <a href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li>
+                    <a href="#">Умные часы</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <a href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="">
+              <!-- overlay для выпадающего меню-->
+            </div>
+          </div>
+
           <ul>
             <li>
               <a href="#">Доставка</a>
@@ -47,6 +94,10 @@
           </ul>
         </div>
       </nav>
+
+      <div class="">
+        <!-- overlay for header-->
+      </div>
     </header>
 
     <main>
@@ -63,6 +114,60 @@
       <section>
         <h2>Фильтрация поиска</h2>
         <!-- Здесь будет форма -->
+        <form action="" method="post">
+          <p>Фильтр:</p>
+          <span><!-- черная горизонтальная линия--></span>
+          <div class="">
+            <label for="cost">Стоимость</label>
+            от 0<input type="range" name="" id="cost">до 5000
+          </div>
+          <span><!-- черная горизонтальная линия--></span>
+          <div class="">
+            <label for="">Цвет</label>
+            <input type="checkbox" name="" value="" checked>
+            <label>Черный</label>
+            <input type="checkbox" name="" value="">
+            <label>Белый</label>
+            <input type="checkbox" name="" value="" checked>
+            <label>Синий</label>
+            <input type="checkbox" name="" value="" checked>
+            <label>Красный</label>
+            <input type="checkbox" name="" value="">
+            <label>Розовый</label>
+          </div>
+          <span><!-- черная горизонтальная линия--></span>
+          <div class="">
+            <label for="bluetooth">Bluetooth</label>
+
+            <label><input type="radio" name="bluetooth" id="bluetooth" value="yes">Есть</label>
+            <label><input type="radio" name="bluetooth" id="bluetooth" value="no">Нет</label>
+          </div>
+          <a href="#">Показать</a>
+        </form>
+      </section>
+      <section>
+        <h2>Сортировка:</h2>
+        <ul>
+          <li>
+            <button type="button" name="button">По цене</button>
+          </li>
+          <li>
+            <button type="button" name="button">По типу</button>
+          </li>
+          <li>
+            <button type="button" name="button">По популярности</button>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <button type="button" name="button">></button> <!--Сортировка по возрастанию -->
+            <span><!-- иконка для сортировки по возрастанию--></span>
+          </li>
+          <li>
+            <button type="button" name="button"><</button> <!-- Сортировка по убыванию-->
+            <span><!-- иконка для сортировки по уюыванию--></span>
+          </li>
+        </ul>
       </section>
       <!-- Не поняла что такое overlay, добавила div для него -->
       <section>
@@ -77,6 +182,8 @@
               <p>500 руб.</p>
             </article>
             <div class="">
+              <button type="button" name="button">В корзину</button>
+              <button type="button" name="button">Добавить к сравнению</button>
               <!-- overlay -->
             </div>
           </li>
@@ -91,6 +198,8 @@
             </article>
             <div class="">
               <!-- overlay -->
+              <button type="button" name="button">В корзину</button>
+              <button type="button" name="button">Добавить к сравнению</button>
             </div>
           </li>
           <li>
@@ -103,6 +212,8 @@
             </article>
             <div class="">
               <!-- overlay -->
+              <button type="button" name="button">В корзину</button>
+              <button type="button" name="button">Добавить к сравнению</button>
             </div>
           </li>
           <li>
@@ -114,40 +225,62 @@
               <p>4900 руб.</p>
             </article>
             <div class="">
+              <button type="button" name="button">В корзину</button>
+              <button type="button" name="button">Добавить к сравнению</button>
               <!-- overlay -->
             </div>
           </li>
         </ul>
       </section>
-
+      <section>
+        <button type="button" name="button">Назад</button>
+        <ul>
+          <li>
+            <a>1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+        </ul>
+        <button type="button" name="button">Вперед</button>
+      </section>
     </main>
 
-    <footer>
-      <div class="">
+    <footer> <!-- третья основная логическая структура-->
+      <div class=""> <!-- логотип + меню авторизованного пользователя-->
         <p>
           <img src="img/device-logo-2.svg" width="" height="" alt="Логотип магазина Девайс-2">
+          <span><!-- overlay для логотипа--></span>
         </p>
-        
         <ul>
           <li>
             <a href="#">Валентин Петухов</a>
+            <span><!--иконка пользователя --></span>
+            <span><!--overlay иконки пользователя --></span>
           </li>
           <li>
             <button type="button" name="button">Выйти</button>
           </li>
           <li>
             <a href="#">Сравнить</a>
+            <span><!--иконка сравнить --></span>
+            <span><!--overlay иконки сравнить --></span>
           </li>
           <li>
             <a href="#">Корзина</a>
+            <span><!--иконка корзины --></span>
+            <span><!--overlay иконки корзины --></span>
           </li>
         </ul>
       </div>
-      <div class="">
+
+      <div class=""> <!--контакты -->
         <p>
           г. Москва, ул. Строителей, 15
         </p>
-
         <ul>
           <li>
             <a href="#">Доставка</a>
@@ -159,25 +292,38 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
-
         <p>
           Тел.: +7(495)495-95-95
         </p>
       </div>
+
       <div class="">
-        <span><!--Желтая горизонтальная линия--></span>
+        <div>
+          <span><!--Желтая горизонтальная линия--></span>
+          <span><!-- overlay для желтой линии--></span>
+        </div>
         <ul>
           <li>
             <a href="#">Фейсбук</a>
+            <span><!--иконка фейсбук--></span>
           </li>
           <li>
             <a href="#">Инстаграм</a>
+            <span><!--иконка инстаграм--></span>
           </li>
           <li>
             <a href="#">Твиттер</a>
+            <span><!--иконка твиттер--></span>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <div>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          <span><!-- логотип html академии--></span>
+          <span><!-- overlay логотипа html академии--></span>
+        </div>
+      </div>
+      <div class="">
+        <!-- overlay для футера-->
       </div>
     </footer>
 
