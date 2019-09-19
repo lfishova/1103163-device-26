@@ -15,72 +15,50 @@
           <div>
             <label for="search_on_site">Поиск по сайту</label>
             <input type="text" name="search_on_site" id="search_on_site">
-            <span><!-- иконка поиска--></span>
           </div>
           <ul>
             <li>
               <a href="#">Валентин Петухов</a>
-              <span><!-- иконка пользователя--></span>
             </li>
             <li>
               <button type="button" name="button">Выйти</button>
             </li>
             <li>
               <a href="#">Сравнить</a>
-              <span><!-- иконка сравнить--></span>
             </li>
             <li>
               <a href="#">Корзина</a>
-              <span><!-- иконка корзины--></span>
             </li>
           </ul>
         </div>
 
         <div class="">
-
           <div class="">
             <a href="catalog.html">Каталог товаров</a>
-            <span><!-- icon plus --></span>
           </div>
           <div class="">
             <!-- Меню вываливающееся при наведении на него-->
             <ul>
               <li>
-                <ul>
-                  <li>
-                    <a href="#">Виртуальная реальность</a>
-                  </li>
-                  <li>
-                    <a href="#">Моноподы для селфи</a>
-                  </li>
-                  <li>
-                    <a href="#">Экшн-камеры</a>
-                  </li>
-                </ul>
+                <a href="#">Виртуальная реальность</a>
               </li>
               <li>
-                <ul>
-                  <li>
-                    <a href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li>
-                    <a href="#">Умные часы</a>
-                  </li>
-                </ul>
+                <a href="#">Моноподы для селфи</a>
               </li>
               <li>
-                <ul>
-                  <li>
-                    <a href="#">Квадрокоптеры</a>
-                  </li>
-                </ul>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
               </li>
             </ul>
-            <div class="">
-              <!-- overlay для выпадающего меню-->
-            </div>
           </div>
-
           <ul>
             <li>
               <a href="#">Доставка</a>
@@ -94,10 +72,6 @@
           </ul>
         </div>
       </nav>
-
-      <div class="">
-        <!-- overlay for header-->
-      </div>
     </header>
 
     <main>
@@ -116,56 +90,56 @@
         <!-- Здесь будет форма -->
         <form action="" method="post">
           <p>Фильтр:</p>
-          <span><!-- черная горизонтальная линия--></span>
-          <div class="">
-            <label for="cost">Стоимость</label>
-            от 0<input type="range" name="" id="cost">до 5000
+          <div class=""> <!--стоимость-->
+            <fieldset>
+              <legend>Стоимость</legend>
+              от 0<input type="range" name="" id="cost">до 5000
+            </fieldset>
           </div>
-          <span><!-- черная горизонтальная линия--></span>
-          <div class="">
-            <label for="">Цвет</label>
-            <input type="checkbox" name="" value="" checked>
-            <label>Черный</label>
-            <input type="checkbox" name="" value="">
-            <label>Белый</label>
-            <input type="checkbox" name="" value="" checked>
-            <label>Синий</label>
-            <input type="checkbox" name="" value="" checked>
-            <label>Красный</label>
-            <input type="checkbox" name="" value="">
-            <label>Розовый</label>
+          <div class=""> <!--цена-->
+            <fieldset>
+              <legend>Цвет</legend>
+              <input type="checkbox" name="" value="" checked>
+              <label>Черный</label> <br>
+              <input type="checkbox" name="" value="">
+              <label>Белый</label> <br>
+              <input type="checkbox" name="" value="" checked>
+              <label>Синий</label> <br>
+              <input type="checkbox" name="" value="" checked>
+              <label>Красный</label> <br>
+              <input type="checkbox" name="" value="">
+              <label>Розовый</label> <br>
+            </fieldset>
           </div>
-          <span><!-- черная горизонтальная линия--></span>
-          <div class="">
-            <label for="bluetooth">Bluetooth</label>
-
-            <label><input type="radio" name="bluetooth" id="bluetooth" value="yes">Есть</label>
-            <label><input type="radio" name="bluetooth" id="bluetooth" value="no">Нет</label>
+          <div class=""> <!--bluetooth-->
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <label><input type="radio" name="bluetooth" id="bluetooth" value="yes">Есть</label> <br>
+              <label><input type="radio" name="bluetooth" id="bluetooth" value="no">Нет</label>
+            </fieldset>
           </div>
-          <a href="#">Показать</a>
+          <button type="button">Показать</button>
         </form>
       </section>
       <section>
         <h2>Сортировка:</h2>
-        <ul>
+        <ul> <!--sort-->
           <li>
-            <button type="button" name="button">По цене</button>
+            <a href="">По цене</a>
           </li>
           <li>
-            <button type="button" name="button">По типу</button>
+            <a href="">По типу</a>
           </li>
           <li>
-            <button type="button" name="button">По популярности</button>
+            <a href="">По популярности</a>
           </li>
         </ul>
-        <ul>
+        <ul> <!--sort-up-down-->
           <li>
-            <button type="button" name="button">></button> <!--Сортировка по возрастанию -->
-            <span><!-- иконка для сортировки по возрастанию--></span>
+            <a href="">></a> <!--Сортировка по возрастанию -->
           </li>
           <li>
-            <button type="button" name="button"><</button> <!-- Сортировка по убыванию-->
-            <span><!-- иконка для сортировки по уюыванию--></span>
+            <a href=""><</a> <!-- Сортировка по убыванию-->
           </li>
         </ul>
       </section>
@@ -181,10 +155,9 @@
               <a href=""><img src="img/noob-pod.png" width="" height="" alt="Любительская селфи-палка"></a>
               <p>500 руб.</p>
             </article>
-            <div class="">
-              <button type="button" name="button">В корзину</button>
-              <button type="button" name="button">Добавить к сравнению</button>
-              <!-- overlay -->
+            <div class=""><!-- overlay -->
+              <a href="">В корзину</a>
+              <a href="">Добавить к сравнению</a>
             </div>
           </li>
           <li>
@@ -194,12 +167,10 @@
               </h3>
               <a href=""><img src="img/profie-pod.png" width="" height="" alt="Профессиональная селфи-палка"></a>
               <p>1500 руб.</p>
-
             </article>
-            <div class="">
-              <!-- overlay -->
-              <button type="button" name="button">В корзину</button>
-              <button type="button" name="button">Добавить к сравнению</button>
+            <div class=""><!-- overlay -->
+              <a href="">В корзину</a>
+              <a href="">Добавить к сравнению</a>
             </div>
           </li>
           <li>
@@ -210,10 +181,9 @@
               <a href=""><img src="img/waterproof-pod.png" width="" height="" alt="Непотопляемая селфи-палка"></a>
               <p>2500 руб.</p>
             </article>
-            <div class="">
-              <!-- overlay -->
-              <button type="button" name="button">В корзину</button>
-              <button type="button" name="button">Добавить к сравнению</button>
+            <div class=""><!-- overlay -->
+              <a href="">В корзину</a>
+              <a href="">Добавить к сравнению</a>
             </div>
           </li>
           <li>
@@ -224,16 +194,15 @@
               <a href=""><img src="img/followme-pod.png" width="" height="" alt="Селфи-палка «следуй за мной»"></a>
               <p>4900 руб.</p>
             </article>
-            <div class="">
-              <button type="button" name="button">В корзину</button>
-              <button type="button" name="button">Добавить к сравнению</button>
-              <!-- overlay -->
+            <div class=""><!-- overlay -->
+              <a href="">В корзину</a>
+              <a href="">Добавить к сравнению</a>
             </div>
           </li>
         </ul>
       </section>
       <section>
-        <button type="button" name="button">Назад</button>
+        <a href="">Назад</a>
         <ul>
           <li>
             <a>1</a>
@@ -245,34 +214,27 @@
             <a href="#">3</a>
           </li>
         </ul>
-        <button type="button" name="button">Вперед</button>
+        <a href="">Вперед</a>
       </section>
     </main>
 
     <footer> <!-- третья основная логическая структура-->
-      <div class=""> <!-- логотип + меню авторизованного пользователя-->
+      <div class="logo"> <!-- логотип + меню авторизованного пользователя-->
         <p>
           <img src="img/device-logo-2.svg" width="" height="" alt="Логотип магазина Девайс-2">
-          <span><!-- overlay для логотипа--></span>
         </p>
         <ul>
           <li>
             <a href="#">Валентин Петухов</a>
-            <span><!--иконка пользователя --></span>
-            <span><!--overlay иконки пользователя --></span>
           </li>
           <li>
             <button type="button" name="button">Выйти</button>
           </li>
           <li>
             <a href="#">Сравнить</a>
-            <span><!--иконка сравнить --></span>
-            <span><!--overlay иконки сравнить --></span>
           </li>
           <li>
             <a href="#">Корзина</a>
-            <span><!--иконка корзины --></span>
-            <span><!--overlay иконки корзины --></span>
           </li>
         </ul>
       </div>
@@ -300,30 +262,21 @@
       <div class="">
         <div>
           <span><!--Желтая горизонтальная линия--></span>
-          <span><!-- overlay для желтой линии--></span>
         </div>
         <ul>
           <li>
             <a href="#">Фейсбук</a>
-            <span><!--иконка фейсбук--></span>
           </li>
           <li>
             <a href="#">Инстаграм</a>
-            <span><!--иконка инстаграм--></span>
           </li>
           <li>
             <a href="#">Твиттер</a>
-            <span><!--иконка твиттер--></span>
           </li>
         </ul>
         <div>
           <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-          <span><!-- логотип html академии--></span>
-          <span><!-- overlay логотипа html академии--></span>
         </div>
-      </div>
-      <div class="">
-        <!-- overlay для футера-->
       </div>
     </footer>
 
