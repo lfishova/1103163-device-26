@@ -93,29 +93,49 @@
           <div class=""> <!--стоимость-->
             <fieldset>
               <legend>Стоимость</legend>
-              от 0<input type="range" name="" id="cost">до 5000
+              <!-- тут будет range slider -->
             </fieldset>
           </div>
           <div class=""> <!--цена-->
             <fieldset>
               <legend>Цвет</legend>
-              <input type="checkbox" name="" value="" checked>
-              <label>Черный</label> <br>
-              <input type="checkbox" name="" value="">
-              <label>Белый</label> <br>
-              <input type="checkbox" name="" value="" checked>
-              <label>Синий</label> <br>
-              <input type="checkbox" name="" value="" checked>
-              <label>Красный</label> <br>
-              <input type="checkbox" name="" value="">
-              <label>Розовый</label> <br>
+              <ul aria-label="Описание списка">
+                <li>
+                  <input type="checkbox" name="" value="" checked>
+                  <label>Черный</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" value="">
+                  <label>Белый</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" value="" checked>
+                  <label>Синий</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" value="" checked>
+                  <label>Красный</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" value="">
+                  <label>Розовый</label>
+                </li>
+              </ul>
             </fieldset>
           </div>
           <div class=""> <!--bluetooth-->
             <fieldset>
               <legend>Bluetooth</legend>
-              <label><input type="radio" name="bluetooth" id="bluetooth" value="yes">Есть</label> <br>
-              <label><input type="radio" name="bluetooth" id="bluetooth" value="no">Нет</label>
+                <ul aria-label="">
+                  <li>
+                    <input type="radio" name="bluetooth" id="bluetooth" value="yes">
+                    <label>Есть</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="bluetooth" id="bluetooth" value="no">
+                    <label>Нет</label>
+                  </li>
+                </ul>
             </fieldset>
           </div>
           <button type="button">Показать</button>
