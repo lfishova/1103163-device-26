@@ -36,7 +36,7 @@
         <div class="">
           <div class="">
             <a href="catalog.html">Каталог товаров</a>
-            <button type="button" name="catalog-items" aria-label="Каталог тоавров"><img src="img/plus.svg" width="16" height="16" aria-hidden="true" alt=""></button>
+            <button type="button" name="catalog-items" aria-label="Каталог товаров"><img src="img/plus.svg" width="16" height="16" aria-hidden="true" alt=""></button>
           </div>
           <div class=""><!-- Меню вываливающееся при наведении на него-->
             <ul>
@@ -415,9 +415,30 @@
       <button type="button" name="close">Закрыть</button>
     </section>
     <section>
-      <h2>Напишите нам</h2>
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="feedback-form" action="index.html" method="post" id="feedback-form">
+        <p>
+          <label for="feedback-name">Ваше имя:</label>
+          <input type="text" name="name" value="" id="feedback-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input type="email" name="email" id="feedback-email" value="" placeholder="email@example.com">
+        </p>
+        <button type="submit" name="submit">Отправить</button>
+      </form>
+
+      <label>Текст письма: <textarea name="name" rows="8" cols="80" id="feedback-form" placeholder="В свободной форме"></textarea></label>
       <!-- тут форма для фидбека -->
-      <button type="button" name="close">Закрыть</button>
+      <button type="button" name="modal-close" arial-label="Закрыть"><img src="img/modal-close.svg" width="55" height="55" alt=""></button>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться?</h2>
+      <p>
+        <img src="img/map-big.png" width="960" height="559" alt="Магазин Девайс расположен по адресу улица Строителей, дом 15">
+      </p>
+      <button type="button" name="modal-close" arial-label="Закрыть"><img src="img/modal-close.svg" width="55" height="55" alt=""></button>
     </section>
   </body>
 </html>
