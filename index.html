@@ -13,17 +13,19 @@
         <div>
           <!-- форма поиска по сайту-->
 
-          <form class="" action="index.html" method="get">
+          <form action="index.html" method="get">
             <button type="submit"><img src="img/search.svg" width="16" height="16" aria-hidden="true" alt=""></button>
             <label for="search_on_site">Поиск по сайту</label>
             <input type="text" name="search_on_site" id="search_on_site" placeholder="Поиск по сайту">
           </form>
 
-
-          <ul> <!--user menu-->
+          <ul>
             <li>
               <a href="#"><img src="img/user.svg" width="13" height="12" aria-hidden="true" alt="">Войти</a>
             </li>
+          </ul>
+
+          <ul>
             <li>
               <a href="#"><img src="img/compare.svg" width="10" height="10" aria-hidden="true" alt="">Сравнить</a>
             </li>
@@ -60,6 +62,7 @@
               </li>
             </ul>
           </div>
+
           <ul>
             <li>
               <a href="#">Доставка</a>
@@ -73,20 +76,19 @@
           </ul>
         </div>
       </nav>
-
     </header>
 
     <main>
-      <h1>Магазин модных гаджетов Девайс</h1>
+      <h1 class="visually-hidden">Магазин модных гаджетов Девайс</h1>
 
       <!-- С Л А Й Д Е Р Ы -->
       <section class="slider">
-        <h2>Слайдеры</h2>
+        <h2 class="visually-hidden">Слайдеры</h2>
         <ul class="slider__slides" aria-label="Slides">
           <li class="slider__slide">
             <!-- slide content -->
             <article class="">
-              <h3>слайдер моноподов</h3>
+              <h3 class="visually-hidden">слайдер моноподов</h3>
               <div>
                 <img src="img/slider-1.png" width="384" height="486" alt="Моноподы">
               </div>
@@ -117,7 +119,7 @@
           <li class="slider__slide">
             <!-- slide content -->
             <article class="">
-              <h3>слайдер фитнес-браслетов</h3>
+              <h3 class="visually-hidden">слайдер фитнес-браслетов</h3>
               <div>
                 <img src="img/slider-2.png" width="345" height="485" alt="фитнес-браслеты">
               </div>
@@ -144,7 +146,7 @@
           <li class="slider__slide">
             <!-- slide content -->
             <article class="">
-              <h3>слайдер квадрокоптеров</h3>
+              <h3 class="visually-hidden">слайдер квадрокоптеров</h3>
               <div>
                 <img src="img/slider-3.png" width="526" height="334" alt="квадракоптеры">
               </div>
@@ -196,7 +198,7 @@
       </section>
 
       <section> <!--картинки товаров на желтом фоне-->
-        <h2>Популярные товары</h2>
+        <h2 class="visually-hidden">Популярные товары</h2>
         <ul>
           <li>
             <div class="">
@@ -238,7 +240,7 @@
       </section>
 
       <section>
-        <h2>Сервис</h2>
+        <h2 class="visually-hidden">Сервис</h2>
         <ul> <!-- кнопки доставка гарантия кредит слева-->
           <li>
             <div>
@@ -292,15 +294,9 @@
       </section>
 
       <section>
-        <h2>Логотипы брендов</h2>
+        <h2 class="visually-hidden">Логотипы брендов</h2>
         <ul>
           <li>
-            <!--Николай Шабалин в лекции упоминал про логотипы брендов, что
-          вроде как тут нужны две картиночки одна в покое другая при наведении.
-          Я погуглила этот момент. Прочитала что это так называемый эффект перекатывания.
-          Для его создания применяется javascript ну или с помощью css можно анологичное сделать с помощью
-          псевдокласса hover. Я решила тут пока что просто картинку покоя оставить...
-          У меня если честно такая каша в голове...  -->
             <a href="#"><img src="img/logo-1.png" width="260" height="100" alt="Логотип1"></a>
           </li>
           <li>
@@ -355,13 +351,13 @@
         </p>
         <ul>
           <li>
-            <a href="#"><img src="img/user.svg" width="13" height="12" alt="Иконка входа на сайт">Войти</a>
+            <a href="#"><img src="img/user.svg" width="13" height="12" aria-hidden="true" alt="">Войти</a>
           </li>
           <li>
-            <a href="#"><img src="img/compare.svg" width="10" height="10" alt="Иконка для сравнить">Сравнить</a>
+            <a href="#"><img src="img/compare.svg" width="10" height="10" aria-hidden="true" alt="">Сравнить</a>
           </li>
           <li>
-            <a href="#"><img src="img/cart.svg" width="12" height="12" alt="Иконка для корзины">Корзина</a>
+            <a href="#"><img src="img/cart.svg" width="12" height="12" aria-hidden="true" alt="">Корзина</a>
           </li>
         </ul>
       </div>
@@ -387,9 +383,6 @@
       </div>
 
       <div class="">
-        <div>
-          <span><!--Желтая горизонтальная линия--></span>
-        </div>
         <ul>
           <li>
             <a href="#"><img src="img/fb.svg" width="32" height="32" aria-hidden="true" alt="">Фейсбук</a>
@@ -407,13 +400,15 @@
       </div>
     </footer>
 
-    <section>
+    <!-- <section>
       <h2>Подробнее о нас</h2>
       <p>
-        <!-- тут какой-то текст про магазин -->
+
       </p>
       <button type="button" name="close">Закрыть</button>
-    </section>
+    </section> -->
+
+    <!--popup write_us -->
     <section>
       <h2 class="visually-hidden">Напишите нам</h2>
       <form class="feedback-form" action="index.html" method="post" id="feedback-form">
@@ -427,18 +422,18 @@
         </p>
         <button type="submit" name="submit">Отправить</button>
       </form>
-
       <label>Текст письма: <textarea name="name" rows="8" cols="80" id="feedback-form" placeholder="В свободной форме"></textarea></label>
-      <!-- тут форма для фидбека -->
-      <button type="button" name="modal-close" arial-label="Закрыть"><img src="img/modal-close.svg" width="55" height="55" alt=""></button>
+      <button type="button" name="modal-close" arial-label="Закрыть"><img src="img/modal-close.svg" width="55" height="55" aria-hidden="true" alt=""></button>
     </section>
 
+    <!-- popup map -->
     <section>
       <h2 class="visually-hidden">Как до нас добраться?</h2>
       <p>
         <img src="img/map-big.png" width="960" height="559" alt="Магазин Девайс расположен по адресу улица Строителей, дом 15">
       </p>
-      <button type="button" name="modal-close" arial-label="Закрыть"><img src="img/modal-close.svg" width="55" height="55" alt=""></button>
+      <button type="button" name="modal-close" arial-label="Закрыть"><img src="img/modal-close.svg" width="55" height="55" aria-hidden="true" alt=""></button>
     </section>
+
   </body>
 </html>

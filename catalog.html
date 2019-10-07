@@ -18,6 +18,7 @@
             <label for="search_on_site">Поиск по сайту</label>
             <input type="text" name="search_on_site" id="search_on_site" placeholder="Поиск по сайту">
           </form>
+
           <ul>
             <li>
               <a href="#"><img src="img/user.svg" width="13" height="12" aria-hidden="true" alt="">Валентин Петухов</a>
@@ -25,6 +26,9 @@
             <li>
               <a href="">Выйти</a>
             </li>
+          </ul>
+
+          <ul>
             <li>
               <a href="#"><img src="img/compare.svg" width="10" height="10" aria-hidden="true" alt="">Сравнить</a>
             </li>
@@ -37,7 +41,7 @@
         <div class="">
           <div class="">
             <a href="catalog.html">Каталог товаров</a>
-            <button type="button" name="catalog-items" aria-label="Каталог тоавров"><img src="img/plus.svg" width="16" height="16" aria-hidden="true" alt=""></button>
+            <button type="button" name="catalog-items" aria-label="Каталог товаров"><img src="img/plus.svg" width="16" height="16" aria-hidden="true" alt=""></button>
           </div>
           <div class="">
             <!-- Меню вываливающееся при наведении на него-->
@@ -78,7 +82,7 @@
     </header>
 
     <main>
-      <h1>Моноподы для селфи</h1>
+      <h1 class="visually-hidden">Моноподы для селфи</h1>
       <ul>
         <li>
           <a href="index.html">Главная</a>
@@ -89,7 +93,7 @@
         <li>Моноподы для селфи</li>
       </ul>
       <section>
-        <h2>Фильтрация поиска</h2>
+        <h2 class="visually-hidden">Фильтрация поиска</h2>
         <!-- Здесь будет форма -->
         <form action="" method="post">
           <p>Фильтр:</p>
@@ -168,14 +172,16 @@
       </section>
       <!-- Не поняла что такое overlay, добавила div для него -->
       <section>
-        <h2>Список моноподов</h2>
+        <h2 class="visually-hidden">Список моноподов</h2>
         <ul>
           <li>
             <article>
-              <h3>
-                <a href=""><span>Любительская селфи палка</span></a>
-              </h3>
-              <a href=""><img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка"></a>
+              <a href="#">
+                <h3><span>Любительская селфи палка</span></h3>
+                <p>
+                  <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                </p>
+              </a>
               <p>500 руб.</p>
             </article>
             <div class=""><!-- overlay -->
@@ -185,10 +191,10 @@
           </li>
           <li>
             <article>
-              <h3>
-                <a href=""><span>Профессиональная селфи-палка</span></a>
-              </h3>
-              <a href=""><img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"></a>
+              <a href="#">
+                <h3><span>Профессиональная селфи-палка</span></h3>
+                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              </a>
               <p>1500 руб.</p>
             </article>
             <div class=""><!-- overlay -->
@@ -198,10 +204,10 @@
           </li>
           <li>
             <article>
-              <h3>
-                <a href="#"><span>Непотопляемая селфи-палка</span></a>
-              </h3>
-              <a href=""><img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
+              <a href="#">
+                <h3><span>Непотопляемая селфи-палка</span></h3>
+                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              </a>
               <p>2500 руб.</p>
             </article>
             <div class=""><!-- overlay -->
@@ -211,10 +217,10 @@
           </li>
           <li>
             <article>
-              <h3>
-                <a href=""><span>Селфи-палка «Следуй за мной»</span></a>
-              </h3>
-              <a href=""><img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «следуй за мной»"></a>
+              <a href="#">
+                <h3><span>Селфи-палка «Следуй за мной»</span></h3>
+                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «следуй за мной»">
+              </a>
               <p>4900 руб.</p>
             </article>
             <div class=""><!-- overlay -->
@@ -224,6 +230,7 @@
           </li>
         </ul>
       </section>
+
       <section>
         <a href="">Назад</a>
         <ul>
@@ -246,6 +253,9 @@
         <p>
           <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс-2">
         </p>
+
+
+
         <ul>
           <li>
             <a href="#"><img src="img/user.svg" width="13" height="12" aria-hidden="true" alt="">Валентин Петухов</a>
@@ -283,9 +293,6 @@
       </div>
 
       <div class="">
-        <div>
-          <span><!--Желтая горизонтальная линия--></span>
-        </div>
         <ul>
           <li>
             <a href="#"><img src="img/fb.svg" width="32" height="32" aria-hidden="true" alt="">Фейсбук</a>
