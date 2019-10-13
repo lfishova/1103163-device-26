@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >
   </head>
   <body>
     <header class="main__header">
@@ -13,7 +15,7 @@
         <div class="main__navigation__part1">
           <form class="search__form" action="index.html" method="get">
             <button class="button" type="submit" aria-label="Поиск товара по сайту"><img src="img/search.svg" width="16" height="16" aria-hidden="true" alt=""></button>
-            <label class="visually__hidden" for="search__item">Поиск по сайту</label>
+            <label class="visually-hidden" for="search__item">Поиск по сайту</label>
             <input id="search__item" type="text" name="search" placeholder="Поиск по сайту">
           </form>
           <ul class="main__user__navigation">
@@ -73,7 +75,7 @@
       </nav>
     </header>
     <main>
-      <h1 class="visually__hidden">Моноподы для селфи</h1>
+      <h1 class="visually-hidden">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li>
           <a href="index.html">Главная</a>
@@ -84,7 +86,7 @@
         <li class="breadcrumbs__current">Моноподы для селфи</li>
       </ul>
       <aside class="filters">
-        <h2 class="visually__hidden">Фильтр товаров</h2>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter__form" action="catalog.html" method="get">
           <p>Фильтр:</p>
           <fieldset>
@@ -94,12 +96,12 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle__min"></div>
-                <div class="toggle toggle__max"></div>
+                <button class="toggle toggle__min" aria-label="Ползунок выбора минимальной стоимости товара"></button>
+                <button class="toggle toggle__max" aria-label="Ползунок выбора максимальной стоимости товара"></button>
               </div>
               <div class="price__controls">
-                <label class="min__price">от <input name="min__price" type="text" value="0"></label>
-                <label class="max__price">до <input name="max__price" type="text" value="5000"></label>
+                <div class="min__price"><span>от</span><input name="min__price" type="text" value="0" aria-label="Минимальна стоимость товара 0"></div>
+                <div class="max__price"><span>до</span><input name="max__price" type="text" value="5000" aria-label="Максимальная стоимость товара 5000"></div>
               </div>
             </div>
           </fieldset>
@@ -167,7 +169,7 @@
         </ul>
       </section>
       <section class="catalog">
-        <h2 class="visually__hidden">Список моноподов</h2>
+        <h2 class="visually-hidden">Список моноподов</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
             <article class="catalog__content">
