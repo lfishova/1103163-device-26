@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" >
+    <!-- <link href="css/normalize.css" rel="stylesheet"> -->
+    <!-- <link href="css/style.css" rel="stylesheet" > -->
   </head>
 
   <body>
@@ -86,7 +86,7 @@
               </div>
               <p class="slider__number">01</p>
               <div class="slider__product__presentation">
-                <p>
+                <p class="slogan">
                   Делай селфи,
                   как Бен Стиллер!
                 </p>
@@ -97,13 +97,13 @@
               </div>
               <div class="slider__product__detail">
                   <a href="#">Подробнее</a>
-                </div>
+              </div>
               <dl class="slider__product__info">
                     <dt>8,5 м</dt>
                     <dd>Длина палки</dd>
                     <dt>5 кг</dt>
                     <dd>Вес палки</dd>
-                    <dt>карбон</dt>
+                    <dt>Карбон</dt>
                     <dd>Материал</dd>
                 </dl>
             </article>
@@ -116,7 +116,7 @@
               </div>
               <p class="slider__number">02</p>
               <div class="slider__product__presentation">
-                <p>
+                <p class="slogan">
                   Худеем
                   правильно!
                 </p>
@@ -140,11 +140,9 @@
               <div class="slider__product__image">
                 <img src="img/slider-3.png" width="526" height="334" alt="квадракоптеры">
               </div>
+              <p class="slider__number">03</p>
               <div class="slider__product__presentation">
-                <p>
-                  03
-                </p>
-                <p>
+                <p class="slogan">
                   Порхает как бабочка,
                   жалит как пчела!
                 </p>
@@ -158,7 +156,7 @@
               </div>
               <dl class="slider__product__info">
                 <dt>800 метров</dt>
-                <dd>Дальност полета</dd>
+                <dd>Дальность полета</dd>
                 <dt>50 м</dt>
                 <dd>Радиус поражения</dd>
               </dl>
@@ -229,17 +227,17 @@
         <ul class="service__list">
           <li class="service__item">
             <div class="service__wrap">
-              <button type="button" name="button">Доставка</button>
+              <button type="button" name="button"><span>Доставка</span></button>
             </div>
           </li>
           <li class="service__item">
             <div class="service__wrap">
-              <button type="button" name="button">Гарантия</button>
+              <button type="button" name="button"><span>Гарантия</span></button>
             </div>
           </li>
           <li class="service__item">
             <div class="service__wrap">
-              <button type="button" name="button">Кредит</button>
+              <button type="button" name="button"><span>Кредит</span></button>
             </div>
           </li>
         </ul>
@@ -296,7 +294,7 @@
           </li>
         </ul>
       </section>
-      <section class="about__us">
+      <section class="about__us description">
         <h2>О нас</h2>
         <p>
           Огромный выбор гаджетов не оставит равнодушным гика,
@@ -311,9 +309,9 @@
           <li class="delivery__item">Автотрейдинг</li>
           <li class="delivery__item">ЖелДорЭкспедиция</li>
         </ul>
-        <button class="button" type="button" name="about__us">Подробнее о нас</button>
+        <button class="button" type="button" name="about__us"><span>Подробнее о нас</span></button>
       </section>
-      <section class="contacts">
+      <section class="contacts description">
         <h2>Контакты</h2>
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
@@ -322,7 +320,7 @@
         <a href="#">
           <img src="img/map.png" width="560" height="222" alt="Наш адрес улица Строителей дом 15">
         </a>
-        <button class="button" type="button" name="write__us">Напишите нам</button>
+        <button class="button" type="button" name="write__us"><span>Напишите нам</span></button>
       </section>
     </main>
 
@@ -363,13 +361,13 @@
       <div class="socials">
         <ul clas="socials__list">
           <li class="socials__item">
-            <a href="#"><img src="img/fb.svg" width="32" height="32" aria-hidden="true" alt="">Фейсбук</a>
+            <a href="#" aria-label="Магазин Девайс на Фейсбуке"><img src="img/fb.svg" width="32" height="32" aria-hidden="true" alt=""></a>
           </li>
           <li class="socials__item">
-            <a href="#"><img src="img/instagram.svg" width="32" height="32" aria-hidden="true" alt="">Инстаграм</a>
+            <a href="#" aria-label="Магазин Девайс в Инстаграм"><img src="img/instagram.svg" width="32" height="32" aria-hidden="true" alt=""></a>
           </li>
           <li class="socials__item">
-            <a href="#"><img src="img/twitter.svg" width="32" height="32" aria-hidden="true" alt="">Твиттер</a>
+            <a href="#" aria-label="Магазин Девайс в Твиттере"><img src="img/twitter.svg" width="32" height="32" aria-hidden="true" alt=""></a>
           </li>
         </ul>
       </div>
