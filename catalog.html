@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" >
   </head>
@@ -107,7 +108,7 @@
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
-              <ul aria-label="Фильтр товаров по цвету">
+              <ul class="filter__list" aria-label="Фильтр товаров по цвету">
                 <li class="filter__option">
                   <input id="filter__black" type="checkbox" name="black" checked>
                   <label for="filter__black">Черный</label>
@@ -132,7 +133,7 @@
           </fieldset>
           <fieldset>
             <legend>Bluetooth</legend>
-              <ul>
+              <ul class="filter__list">
                 <li class="filter__option">
                   <input id="filter__bluetooth__yes" type="radio" name="bluetooth" value="yes">
                   <label for="filter__bluetooth__yes">Есть</label>
@@ -246,11 +247,11 @@
     </main>
     <footer class="main__footer">
       <div class="logo__wrap">
-        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс-2">
+        <img src="img/logo-device-footer.svg" width="163" height="35" alt="Логотип магазина Девайс-2">
       </div>
       <ul class="user__nav__list">
         <li>
-          <a href="#"><img src="img/user.svg" width="13" height="12" aria-hidden="true" alt="">Валентин Петухов</a>
+          <a href="#"><img src="img/user-footer.svg" width="13" height="12" aria-hidden="true" alt="">Валентин Петухов</a>
         </li>
         <li>
           <a href="">Выйти</a>
@@ -258,10 +259,10 @@
       </ul>
       <ul class="shop__list">
         <li>
-          <a href="#"><img src="img/compare.svg" width="10" height="10" aria-hidden="true" alt="">Сравнить</a>
+          <a href="#"><img src="img/compare-footer.svg" width="10" height="10" aria-hidden="true" alt="">Сравнить</a>
         </li>
         <li>
-          <a href="#"><img src="img/cart.svg" width="12" height="12" aria-hidden="true" alt="">Корзина</a>
+          <a href="#"><img src="img/cart-footer.svg" width="12" height="12" aria-hidden="true" alt="">Корзина</a>
         </li>
       </ul>
       <p>
@@ -284,17 +285,17 @@
       <div class="socials">
         <ul class="socials__list">
           <li class="socials__item">
-            <a href="#"><img src="img/fb.svg" width="32" height="32" aria-hidden="true" alt="">Фейсбук</a>
+            <a href="#" aria-label="Магазин Девайс на Фейсбуке"><img src="img/fb.svg" width="32" height="32" aria-hidden="true" alt=""></a>
           </li>
           <li class="socials__item">
-            <a href="#"><img src="img/instagram.svg" width="32" height="32" aria-hidden="true" alt="">Инстаграм</a>
+            <a href="#" aria-label="Магазин Девайс в Инстаграм"><img src="img/instagram.svg" width="32" height="32" aria-hidden="true" alt=""></a>
           </li>
           <li class="socials__item">
-            <a href="#"><img src="img/twitter.svg" width="32" height="32" aria-hidden="true" alt="">Твиттер</a>
+            <a href="#" aria-label="Магазин Девайс в Твиттере"><img src="img/twitter.svg" width="32" height="32" aria-hidden="true" alt=""></a>
           </li>
         </ul>
         <div class="copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" aria-hidden="true" alt=""></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Академия"><img src="img/logo-html.svg" width="27" height="35" aria-hidden="true" alt=""></a>
         </div>
       </div>
     </footer>

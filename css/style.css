@@ -46,10 +46,31 @@ a {
   color: #000000;
 }
 
-.main__navigation__part1,
-.main__navigation__part2 {
+.main__user__navigation,
+.main__shop__list,
+.catalog__list,
+.service__list,
+.slider__slides,
+.slider__dots,
+.popular__list,
+.service__detail__list,
+.logo__list,
+.breadcrumbs,
+.filter__list,
+.sort__list,
+.sort__updown__list,
+.pagination__list {
+  list-style: none;
+}
+
+.main__navigation {
   background-color: #f7e296;
 }
+
+/* .main__navigation__part1,
+.main__navigation__part2 {
+  background-color: #f7e296;
+} */
 
 .main__navigation__part1 {
   /* display: none; */
@@ -260,4 +281,15 @@ a {
 
 .modal__map {
   display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
