@@ -97,8 +97,10 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <button class="toggle toggle__min" aria-label="Ползунок выбора минимальной стоимости товара"></button>
-                <button class="toggle toggle__max" aria-label="Ползунок выбора максимальной стоимости товара"></button>
+                <label for="toggle__min" class="visually-hidden">Ползунок выбора минимальной стоимости товара</label>
+                <button id="toggle__min" class="toggle toggle__min"></button>
+                <label for="toggle__max" class="visually-hidden">Ползунок выбора максимальной стоимости товара</label>
+                <button id="toggle__max" class="toggle toggle__max"></button>
               </div>
               <div class="price__controls">
                 <div class="min__price"><span>от</span><input name="min__price" type="text" value="0" aria-label="Минимальна стоимость товара 0"></div>
