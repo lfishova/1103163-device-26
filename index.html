@@ -97,7 +97,7 @@
                 </p>
               </div>
               <div class="slider__product__detail">
-                  <a href="#">Подробнее</a>
+                    <a class="slider__button" href="#">Подробнее</a>
               </div>
               <dl class="slider__product__info">
                     <dt>8,5 м</dt>
@@ -127,7 +127,7 @@
                 </p>
               </div>
               <div class="slider__product__detail">
-                <a href="#">Подробнее</a>
+                <a class="slider__button" href="#">Подробнее</a>
               </div>
               <dl class="slider__product__info">
                 <dt>48 часов</dt>
@@ -153,7 +153,7 @@
                 </p>
               </div>
               <div class="slider__product__detail">
-                <a href="#">Подробнее</a>
+                <a class="slider__button" href="#">Подробнее</a>
               </div>
               <dl class="slider__product__info">
                 <dt>800 метров</dt>
@@ -186,40 +186,46 @@
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular__list">
           <li class="popular__item">
-            <div class="popular__wrap">
-              <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
-              <p>Виртуальная реальность</p>
+          <a href="#">  <div class="popular__wrap">
+              <img class="displayed" src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+
             </div>
+            <p>Виртуальная реальность</p></a>
           </li>
           <li class="popular__item">
-            <div class="popular__wrap">
-              <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
-              <p>Моноподы для селфи</p>
-            </div>
+            <a href="#"><div class="popular__wrap">
+                <img class="displayed" src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+
+              </div>
+              <p>Моноподы для селфи</p></a>
           </li>
           <li class="popular__item">
-            <div class="popular__wrap">
-              <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
-              <p>Экшн-камеры</p>
-            </div>
+            <a href="#"><div class="popular__wrap">
+                <img class="displayed" src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+
+              </div>
+              <p>Экшн-камеры</p></a>
           </li>
           <li class="popular__item">
-            <div class="popular__wrap">
-              <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
-              <p>Фитнес-браслеты</p>
-            </div>
+            <a href="#"><div class="popular__wrap">
+                <img class="displayed" src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+
+              </div>
+              <p>Фитнес-браслеты</p></a>
           </li>
           <li class="popular__item">
-            <div class="popular__wrap">
-              <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
-              <p>Умные часы</p>
-            </div>
+            <a href="#"><div class="popular__wrap">
+                <img class="displayed" src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+
+              </div>
+              <p>Умные часы</p></a>
           </li>
           <li class="popular__item">
-            <div class="popular__wrap">
-              <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
-              <p>Квадрокоптеры</p>
-            </div>
+            <a href="#"><div class="popular__wrap">
+                <img class="displayed" src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+
+              </div>
+              <p>Квадрокоптеры</p></a>
           </li>
         </ul>
       </section>
@@ -282,16 +288,28 @@
         <h2 class="visually-hidden">Логотипы брендов</h2>
         <ul class="logo__list">
           <li class="logo__item">
-            <a href="#"><img src="img/logo-1.png" width="260" height="100" alt="Логотип1"></a>
+            <a class="animate" href="#">
+              <img class="first" src="img/logo-1-black.png" width="260" height="100" alt="">
+              <img class="second" src="img/logo-1.png" width="260" height="100" alt="Логотип1">
+            </a>
           </li>
           <li class="logo__item">
-            <a href="#"><img src="img/logo-2.png" width="260" height="100" alt="Логотип2"></a>
+            <a class="animate" href="#">
+              <img class="first" src="img/logo-2-black.png" width="260" height="100" alt="">
+              <img class="second" src="img/logo-2.png" width="260" height="100" alt="Логотип2">
+            </a>
           </li>
           <li class="logo__item">
-            <a href="#"><img src="img/logo-3.png" width="260" height="100" alt="Логотип3"></a>
+            <a class="animate" href="#">
+              <img class="first" src="img/logo-3-black.png" width="260" height="100" alt="">
+              <img class="second" src="img/logo-3.png" width="260" height="100" alt="Логотип3">
+            </a>
           </li>
           <li class="logo__item">
-            <a href="#"><img src="img/logo-4.png" width="260" height="100" alt="Логотип4"></a>
+            <a class="animate" href="#">
+              <img class="first" src="img/logo-4-black.png" alt="">
+              <img class="second" src="img/logo-4.png" width="260" height="100" alt="Логотип4">
+            </a>
           </li>
         </ul>
       </section>
@@ -330,9 +348,11 @@
     </main>
 
     <footer class="main__footer">
-      <div class="logo__wrap">
-        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
-      </div>
+
+      <a class="logo__footer" href="">
+        <img src="img/logo-device-footer.svg" width="163" height="35" alt="Логотип магазина Девайс">
+      </a>
+
       <ul class="user__nav__list">
         <li>
           <a href="#"><img src="img/user-footer.svg" width="13" height="12" aria-hidden="true" alt="">Войти</a>
