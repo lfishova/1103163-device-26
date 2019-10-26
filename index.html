@@ -7,37 +7,21 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" >
   </head>
-
   <body>
     <header class="main__header">
       <a class="main__header__logo" href="#">
         <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
       </a>
       <nav class="main__navigation">
-        <div class="main__navigation__part1">
+        <div class="container">
           <form class="search__form" action="index.html" method="get">
-            <button class="button" type="submit" aria-label="Поиск товара по сайту"><img src="img/search.svg" width="16" height="16" aria-hidden="true" alt=""></button>
+            <button class="button search__button" type="submit" aria-label="Поиск товара по сайту"><img src="img/search.svg" width="16" height="16" aria-hidden="true" alt=""></button>
             <label class="visually-hidden" for="search__item">Поиск по сайту</label>
             <input id="search__item" type="text" name="search" placeholder="Поиск по сайту">
           </form>
-          <ul class="main__user__navigation">
-            <li>
-              <a href="#"><img src="img/user.svg" width="13" height="12" aria-hidden="true" alt="">Войти</a>
-            </li>
-          </ul>
-          <ul class="main__shop__list">
-            <li class="shop__item">
-              <a href="#"><img src="img/compare.svg" width="10" height="10" aria-hidden="true" alt="">Сравнить</a>
-            </li>
-            <li class="shop__item">
-              <a href="#"><img src="img/cart.svg" width="12" height="12" aria-hidden="true" alt="">Корзина</a>
-            </li>
-          </ul>
-        </div>
-        <div class="main__navigation__part2">
-          <a href="catalog.html">Каталог товаров</a>
-          <button class="button" type="button" name="catalog__items" aria-label="Раскрыть меню каталога товаров"><img src="img/plus.svg" width="16" height="16" aria-hidden="true" alt=""></button>
-          <div class="menu__navigation">
+          <a class="catalog__reference" href="catalog.html">Каталог товаров</a>
+          <button class="button catalog__button" type="button" name="catalog__items" aria-label="Раскрыть меню каталога товаров"><img src="img/plus.svg" width="16" height="16" aria-hidden="true" alt=""></button>
+          <div class="catalog__container">
             <ul class="catalog__list">
               <li class="catalog__item">
                 <a href="#">Виртуальная реальность</a>
@@ -48,32 +32,53 @@
               <li class="catalog__item">
                 <a href="#">Экшн-камеры</a>
               </li>
+            </ul>
+            <ul class="catalog__list">
               <li class="catalog__item">
                 <a href="#">Фитнес-браслеты</a>
               </li>
               <li class="catalog__item">
                 <a href="#">Умные часы</a>
               </li>
+            </ul>
+            <ul class="catalog__list">
               <li class="catalog__item">
                 <a href="#">Квадрокоптеры</a>
               </li>
             </ul>
-            <ul class="service__list">
-              <li class="service__item">
-                <a href="#">Доставка</a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container__wrapper">
+            <ul class="user__navigation">
+              <li>
+                <a href="#"><img src="img/user.svg" width="13" height="12" aria-hidden="true" alt="">Войти</a>
               </li>
-              <li class="service__item">
-                <a href="#">Гарантия</a>
+            </ul>
+            <ul class="shop__list">
+              <li class="shop__item">
+                <a href="#"><img src="img/compare.svg" width="10" height="10" aria-hidden="true" alt="">Сравнить</a>
               </li>
-              <li class="service__item">
-                <a href="#">Контакты</a>
+              <li class="shop__item">
+                <a href="#"><img src="img/cart.svg" width="12" height="12" aria-hidden="true" alt="">Корзина</a>
               </li>
             </ul>
           </div>
+          <ul class="service__list">
+            <li class="service__item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="service__item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="service__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
         </div>
+
       </nav>
     </header>
-
     <main class="container">
       <h1 class="visually-hidden">Магазин модных гаджетов Девайс</h1>
       <section class="slider">
@@ -186,46 +191,64 @@
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular__list">
           <li class="popular__item">
-          <a href="#">  <div class="popular__wrap">
-              <img class="displayed" src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
-
+          <a href="#">
+            <div class="popular__wrap">
+              <div class="displayed__background">
+                <img class="displayed" src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+              </div>
             </div>
-            <p>Виртуальная реальность</p></a>
+            <p>Виртуальная реальность</p>
+          </a>
           </li>
           <li class="popular__item">
-            <a href="#"><div class="popular__wrap">
-                <img class="displayed" src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
-
+            <a href="#">
+              <div class="popular__wrap">
+                <div class="displayed__background">
+                  <img class="displayed" src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+                </div>
               </div>
-              <p>Моноподы для селфи</p></a>
+              <p>Моноподы для селфи</p>
+            </a>
           </li>
           <li class="popular__item">
-            <a href="#"><div class="popular__wrap">
-                <img class="displayed" src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
-
+            <a href="#">
+              <div class="popular__wrap">
+                <div class="displayed__background">
+                  <img class="displayed" src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+                </div>
               </div>
-              <p>Экшн-камеры</p></a>
+              <p>Экшн-камеры</p>
+            </a>
           </li>
           <li class="popular__item">
-            <a href="#"><div class="popular__wrap">
-                <img class="displayed" src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
-
+            <a href="#">
+              <div class="popular__wrap">
+                <div class="displayed__background">
+                  <img class="displayed" src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+                </div>
               </div>
-              <p>Фитнес-браслеты</p></a>
+              <p>Фитнес-браслеты</p>
+            </a>
           </li>
           <li class="popular__item">
-            <a href="#"><div class="popular__wrap">
-                <img class="displayed" src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
-
+            <a href="#">
+              <div class="popular__wrap">
+                <div class="displayed__background">
+                  <img class="displayed" src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+                </div>
               </div>
-              <p>Умные часы</p></a>
+              <p>Умные часы</p>
+            </a>
           </li>
           <li class="popular__item">
-            <a href="#"><div class="popular__wrap">
-                <img class="displayed" src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
-
+            <a href="#">
+              <div class="popular__wrap">
+                <div class="displayed__background">
+                  <img class="displayed" src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+                </div>
               </div>
-              <p>Квадрокоптеры</p></a>
+              <p>Квадрокоптеры</p>
+            </a>
           </li>
         </ul>
       </section>
@@ -288,25 +311,25 @@
         <h2 class="visually-hidden">Логотипы брендов</h2>
         <ul class="logo__list">
           <li class="logo__item">
-            <a class="animate" href="#">
+            <a class="logo__animate" href="#">
               <img class="first" src="img/logo-1-black.png" width="260" height="100" alt="">
               <img class="second" src="img/logo-1.png" width="260" height="100" alt="Логотип1">
             </a>
           </li>
           <li class="logo__item">
-            <a class="animate" href="#">
+            <a class="logo__animate" href="#">
               <img class="first" src="img/logo-2-black.png" width="260" height="100" alt="">
               <img class="second" src="img/logo-2.png" width="260" height="100" alt="Логотип2">
             </a>
           </li>
           <li class="logo__item">
-            <a class="animate" href="#">
+            <a class="logo__animate" href="#">
               <img class="first" src="img/logo-3-black.png" width="260" height="100" alt="">
               <img class="second" src="img/logo-3.png" width="260" height="100" alt="Логотип3">
             </a>
           </li>
           <li class="logo__item">
-            <a class="animate" href="#">
+            <a class="logo__animate" href="#">
               <img class="first" src="img/logo-4-black.png" alt="">
               <img class="second" src="img/logo-4.png" width="260" height="100" alt="Логотип4">
             </a>
@@ -324,9 +347,9 @@
           России! DEVICE работает со многими транспортными компаниями:
         </p>
         <ul class="delivery__list">
-          <li class="delivery__item">Деловые линии</li>
-          <li class="delivery__item">Автотрейдинг</li>
-          <li class="delivery__item">ЖелДорЭкспедиция</li>
+          <li class="delivery__item"><span>Деловые линии</span></li>
+          <li class="delivery__item"><span>Автотрейдинг</span></li>
+          <li class="delivery__item"><span>ЖелДорЭкспедиция</span></li>
         </ul>
         <div class="service__wrap">
           <button class="service__button" type="button" name="about__us">Подробнее о нас</button>
@@ -346,45 +369,48 @@
         </div>
       </section>
     </main>
-
     <footer class="main__footer">
 
-      <a class="logo__footer" href="">
-        <img src="img/logo-device-footer.svg" width="163" height="35" alt="Логотип магазина Девайс">
-      </a>
+      <div class="user__menu">
+        <a class="logo__footer" href="">
+          <img src="img/logo-device-footer.svg" width="163" height="35" alt="Логотип магазина Девайс">
+        </a>
 
-      <ul class="user__nav__list">
-        <li>
-          <a href="#"><img src="img/user-footer.svg" width="13" height="12" aria-hidden="true" alt="">Войти</a>
-        </li>
-      </ul>
-      <ul class="shop__list">
-        <li>
-          <a href="#"><img src="img/compare-footer.svg" width="10" height="10" aria-hidden="true" alt="">Сравнить</a>
-        </li>
-        <li>
-          <a href="#"><img src="img/cart-footer.svg" width="12" height="12" aria-hidden="true" alt="">Корзина</a>
-        </li>
-      </ul>
-      <p>
-        г. Москва, ул. Строителей, 15
-      </p>
-      <ul class="service__list">
-        <li class="service__item">
-          <a href="#">Доставка</a>
-        </li>
-        <li class="service__item">
-          <a href="#">Гарантия</a>
-        </li>
-        <li class="service__item">
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <p>
-        Тел.: +7(495)495-95-95
-      </p>
+        <ul class="user__nav__list">
+          <li>
+            <a href="#"><img src="img/user-footer.svg" width="13" height="12" aria-hidden="true" alt="">Войти</a>
+          </li>
+        </ul>
+        <ul class="shop__list">
+          <li>
+            <a href="#"><img src="img/compare-footer.svg" width="10" height="10" aria-hidden="true" alt="">Сравнить</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/cart-footer.svg" width="12" height="12" aria-hidden="true" alt="">Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <p>
+          г. Москва, ул. Строителей, 15
+        </p>
+        <ul class="service__list">
+          <li class="service__item">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="service__item">
+            <a href="#">Гарантия</a>
+          </li>
+          <li class="service__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <p>
+          Тел.: +7(495)495-95-95
+        </p>
+      </div>
       <div class="socials">
-        <ul clas="socials__list">
+        <ul class="socials__list">
           <li class="socials__item">
             <a href="#" aria-label="Магазин Девайс на Фейсбуке"><img src="img/fb.svg" width="32" height="32" aria-hidden="true" alt=""></a>
           </li>
@@ -426,6 +452,5 @@
       </p>
       <button class="button" type="button" name="modal__close" arial-label="Закрыть"><img src="img/modal-close.svg" width="55" height="55" aria-hidden="true" alt=""></button>
     </section>
-
   </body>
 </html>
