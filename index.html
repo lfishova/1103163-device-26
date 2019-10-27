@@ -19,9 +19,11 @@
             <label class="visually-hidden" for="search__item">Поиск по сайту</label>
             <input id="search__item" type="text" name="search" placeholder="Поиск по сайту">
           </form>
-          <a class="catalog__reference" href="catalog.html">Каталог товаров</a>
-          <button class="button catalog__button" type="button" name="catalog__items" aria-label="Раскрыть меню каталога товаров"><img src="img/plus.svg" width="16" height="16" aria-hidden="true" alt=""></button>
-          <div class="catalog__container">
+          <div class="catalog__reference__container">
+            <a class="catalog__reference" href="catalog.html">Каталог товаров</a>
+            <button class="button catalog__button" type="button" name="catalog__items" aria-label="Раскрыть меню каталога товаров"><img src="img/plus.svg" width="16" height="16" aria-hidden="true" alt=""></button>
+          </div>
+          <div class="catalog__container border">
             <ul class="catalog__list">
               <li class="catalog__item">
                 <a href="#">Виртуальная реальность</a>
@@ -52,15 +54,15 @@
           <div class="container__wrapper">
             <ul class="user__navigation">
               <li>
-                <a href="#"><img src="img/user.svg" width="13" height="12" aria-hidden="true" alt="">Войти</a>
+                <a href="#"><img src="img/user.svg" width="13" height="12" aria-hidden="true" alt=""><span>Войти</span></a>
               </li>
             </ul>
             <ul class="shop__list">
               <li class="shop__item">
-                <a href="#"><img src="img/compare.svg" width="10" height="10" aria-hidden="true" alt="">Сравнить</a>
+                <a href="#"><img src="img/compare.svg" width="10" height="10" aria-hidden="true" alt=""><span>Сравнить</span></a>
               </li>
               <li class="shop__item">
-                <a href="#"><img src="img/cart.svg" width="12" height="12" aria-hidden="true" alt="">Корзина</a>
+                <a href="#"><img src="img/cart.svg" width="12" height="12" aria-hidden="true" alt=""><span>Корзина</span></a>
               </li>
             </ul>
           </div>
@@ -85,87 +87,99 @@
         <h2 class="visually-hidden">Слайдеры</h2>
         <ul class="slider__slides" aria-label="Слайдеры товаров">
           <li class="slider__slide">
-            <article class="slider__content">
+            <article class="slider__content border">
               <h3 class="visually-hidden">Слайдер моноподов</h3>
-              <div class="slider__product__image">
+              <div class="slider__product__image border">
                 <img src="img/slider-1.png" width="384" height="486" alt="Моноподы">
               </div>
-              <p class="slider__number">01</p>
-              <div class="slider__product__presentation">
-                <p class="slogan">
-                  Делай селфи,
-                  как Бен Стиллер!
-                </p>
-                <p>
-                  Самая длинная палка для селфи доступна в нашем магазине.
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм
-                </p>
+              <div class="slider__information border">
+                <p class="slider__number">01</p>
+                <div class="slider__product__presentation">
+                  <p class="slogan border">
+                    Делай селфи,
+                    как Бен Стиллер!
+                  </p>
+                  <p class="border">
+                    Самая длинная палка для селфи доступна в нашем магазине.
+                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм
+                  </p>
+                </div>
+                <div class="slider__product__detail">
+                      <a class="slider__button" href="#">Подробнее</a>
+                </div>
+                <dl class="slider__product__info">
+                      <div>
+                        <dt>8,5 м</dt>
+                        <dd>Длина палки</dd>
+                      </div>
+                      <div>
+                        <dt>5 кг</dt>
+                        <dd>Вес палки</dd>
+                      </div>
+                      <div>
+                        <dt>Карбон</dt>
+                        <dd>Материал</dd>
+                      </div>
+                  </dl>
               </div>
-              <div class="slider__product__detail">
-                    <a class="slider__button" href="#">Подробнее</a>
-              </div>
-              <dl class="slider__product__info">
-                    <dt>8,5 м</dt>
-                    <dd>Длина палки</dd>
-                    <dt>5 кг</dt>
-                    <dd>Вес палки</dd>
-                    <dt>Карбон</dt>
-                    <dd>Материал</dd>
-                </dl>
             </article>
           </li>
           <li class="slider__slide">
-            <article class="slider__content">
+            <article class="slider__content border">
               <h3 class="visually-hidden">Слайдер фитнес-браслетов</h3>
-              <div class="slider__product__image">
+              <div class="slider__product__image border">
                 <img src="img/slider-2.png" width="345" height="485" alt="фитнес-браслеты">
               </div>
-              <p class="slider__number">02</p>
-              <div class="slider__product__presentation">
-                <p class="slogan">
-                  Худеем
-                  правильно!
-                </p>
-                <p>
-                  Мотивирующие фитнес-браслеты помогут найти в себе силы
-                  не пропускать занятия и соблюдать диету.
-                </p>
+              <div class="slider__information border">
+                <p class="slider__number">02</p>
+                <div class="slider__product__presentation">
+                  <p class="slogan">
+                    Худеем
+                    правильно!
+                  </p>
+                  <p>
+                    Мотивирующие фитнес-браслеты помогут найти в себе силы
+                    не пропускать занятия и соблюдать диету.
+                  </p>
+                </div>
+                <div class="slider__product__detail">
+                  <a class="slider__button" href="#">Подробнее</a>
+                </div>
+                <dl class="slider__product__info">
+                  <dt>48 часов</dt>
+                  <dd>Без подзарядки</dd>
+                </dl>
               </div>
-              <div class="slider__product__detail">
-                <a class="slider__button" href="#">Подробнее</a>
-              </div>
-              <dl class="slider__product__info">
-                <dt>48 часов</dt>
-                <dd>Без подзарядки</dd>
-              </dl>
             </article>
           </li>
           <li class="slider__slide">
-            <article class="slider__content">
+            <article class="slider__content border">
               <h3 class="visually-hidden">Слайдер квадрокоптеров</h3>
-              <div class="slider__product__image">
+              <div class="slider__product__image border">
                 <img src="img/slider-3.png" width="526" height="334" alt="квадракоптеры">
               </div>
-              <p class="slider__number">03</p>
-              <div class="slider__product__presentation">
-                <p class="slogan">
-                  Порхает как бабочка,
-                  жалит как пчела!
-                </p>
-                <p>
-                  Этот обычный, на первый взгляд, квадрокоптер оснащен
-                  мощным лазером, замаскированным под стандартную камеру.
-                </p>
+              <div class="slider__information border">
+                <p class="slider__number">03</p>
+                <div class="slider__product__presentation">
+                  <p class="slogan">
+                    Порхает как бабочка,
+                    жалит как пчела!
+                  </p>
+                  <p>
+                    Этот обычный, на первый взгляд, квадрокоптер оснащен
+                    мощным лазером, замаскированным под стандартную камеру.
+                  </p>
+                </div>
+                <div class="slider__product__detail">
+                  <a class="slider__button" href="#">Подробнее</a>
+                </div>
+                <dl class="slider__product__info">
+                  <dt>800 метров</dt>
+                  <dd>Дальность полета</dd>
+                  <dt>50 м</dt>
+                  <dd>Радиус поражения</dd>
+                </dl>
               </div>
-              <div class="slider__product__detail">
-                <a class="slider__button" href="#">Подробнее</a>
-              </div>
-              <dl class="slider__product__info">
-                <dt>800 метров</dt>
-                <dd>Дальность полета</dd>
-                <dt>50 м</dt>
-                <dd>Радиус поражения</dd>
-              </dl>
             </article>
           </li>
         </ul>

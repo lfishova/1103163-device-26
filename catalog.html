@@ -19,9 +19,11 @@
             <label class="visually-hidden" for="search__item">Поиск по сайту</label>
             <input id="search__item" type="text" name="search" placeholder="Поиск по сайту">
           </form>
-          <a class="catalog__reference" href="catalog.html">Каталог товаров</a>
-          <button class="button catalog__button" type="button" name="catalog__items" aria-label="Раскрыть меню каталога товаров"><img src="img/plus.svg" width="16" height="16" aria-hidden="true" alt=""></button>
-          <div class="catalog__container">
+          <div class="catalog__reference__container">
+            <a class="catalog__reference" href="catalog.html">Каталог товаров</a>
+            <button class="button catalog__button" type="button" name="catalog__items" aria-label="Раскрыть меню каталога товаров"><img src="img/plus.svg" width="16" height="16" aria-hidden="true" alt=""></button>
+          </div>
+          <div class="catalog__container border">
             <ul class="catalog__list">
               <li class="catalog__item">
                 <a href="#">Виртуальная реальность</a>
@@ -52,7 +54,7 @@
           <div class="container__wrapper">
             <ul class="user__navigation">
               <li>
-                <a href="#"><img src="img/user.svg" width="13" height="12" aria-hidden="true" alt="">Валентин Петухов</a>
+                <a href="#"><img src="img/user.svg" width="13" height="12" aria-hidden="true" alt=""><span>Валентин Петухов</span></a>
               </li>
               <li>
                 <a href="">Выйти</a>
@@ -60,10 +62,10 @@
             </ul>
             <ul class="shop__list">
               <li class="shop__item">
-                <a href="#"><img src="img/compare.svg" width="10" height="10" aria-hidden="true" alt="">Сравнить</a>
+                <a href="#"><img src="img/compare.svg" width="10" height="10" aria-hidden="true" alt=""><span>Сравнить</span></a>
               </li>
               <li class="shop__item">
-                <a href="#"><img src="img/cart.svg" width="12" height="12" aria-hidden="true" alt="">Корзина</a>
+                <a href="#"><img src="img/cart.svg" width="12" height="12" aria-hidden="true" alt=""><span>Корзина</span></a>
               </li>
             </ul>
           </div>
